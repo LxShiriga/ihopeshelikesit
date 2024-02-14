@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="index.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <title>Took me hours for this</title>
+    </head>
+    <body>
+        <div class="envelope-wrapper">
+            <div id="envelope" class="close">
+                <div class="front flap"></div>
+                <div class="front pocket"></div>
+                <div class="rectangle"></div>
+                <div class="letter">
+                    <p class="words line1">Dear Sarah,</p>
+                    <p class="words line2">I am writing this to express the things I admire about you. Yknow, at first sight, those smiles you possess made time stands still. Words couldn't describe, but there was a heart that you fill. Your style & beaut shines out from the other. It drew me in like a hidden tether, and I know in that moment I wanted to know you deeper. The moment we started to talk, it was a delight. As each word shared, I felt that we are very much alike. And the time we hangout and play, your adorable vibe and energy, creates memories that forever stay.</p>
+                    <p class="words line3"></p>
+                    <p class="words line4"></p>
+                    <p class="words line5"></p>
+                    <p class="words line6">can u dont stop being cute. ok bye</p>
+                </div>
+                <div class="hearts">
+                    <div class="heart a1"></div>
+                    <div class="heart a2"></div>
+                    <div class="heart a3"></div>
+                </div>
+            </div>
+        </div>
+        <div class="reset">
+            <button id="open">Open</button>
+            <button id="reset" onclick="openLink()">Reset</button>
+            <script>
+                function openLink() {
+                    // Prompt the user to confirm opening the link
+                    var confirmOpen = confirm("This song means a lot about you. Would you like to open it?");
+                    
+                    // If the user confirms, open the embedded link
+                    if (confirmOpen) {
+                        var link = "https://www.youtube.com/watch?v=GodO6kBK1m8"; // Your embedded link goes here
+                        window.open(link, "_blank");
+                    }
+                }
+            </script>
+        </div>
+        <h1 class="ihopehselikesit"></h1>
+        <script src="index.js"></script>
+    </body>
+</html>
